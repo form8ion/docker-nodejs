@@ -15,6 +15,8 @@ form8ion plugin for node.js project deployed with Docker
 * [Usage](#usage)
   * [Installation](#installation)
   * [Example](#example)
+    * [Import](#import)
+    * [Execute](#execute)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
@@ -26,13 +28,14 @@ form8ion plugin for node.js project deployed with Docker
 [![npm][npm-badge]][npm-link]
 [![Try @form8ion/docker-nodejs on RunKit][runkit-badge]][runkit-link]
 [![license][license-badge]][license-link]
+![node][node-badge]
 
 <!--consumer-badges end -->
 
 ### Installation
 
 ```sh
-$ npm install @form8ion/docker-nodejs
+$ npm install @form8ion/docker-nodejs --save-prod
 ```
 
 ### Example
@@ -47,7 +50,10 @@ import {scaffold} from '@form8ion/docker-nodejs';
 
 ```javascript
 (async () => {
-  await scaffold({projectRoot: process.cwd()});
+  await scaffold({
+    projectRoot: process.cwd(),
+    buildDirectory: 'path/to/application/entry/point'
+  });
 })();
 ```
 
@@ -117,3 +123,5 @@ $ npm test
 [license-link]: LICENSE
 
 [license-badge]: https://img.shields.io/github/license/form8ion/docker-nodejs.svg?logo=opensourceinitiative
+
+[node-badge]: https://img.shields.io/node/v/@form8ion/docker-nodejs?logo=node.js
