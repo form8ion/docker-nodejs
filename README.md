@@ -28,6 +28,7 @@ form8ion plugin for node.js project deployed with Docker
 [![npm][npm-badge]][npm-link]
 [![Try @form8ion/docker-nodejs on RunKit][runkit-badge]][runkit-link]
 [![license][license-badge]][license-link]
+![node][node-badge]
 
 <!--consumer-badges end -->
 
@@ -122,3 +123,5 @@ $ npm test
 [license-link]: LICENSE
 
 [license-badge]: https://img.shields.io/github/license/form8ion/docker-nodejs.svg?logo=opensourceinitiative
+
+[node-badge]: https://img.shields.io/node/v/@form8ion/docker-nodejs?logo=node.js
