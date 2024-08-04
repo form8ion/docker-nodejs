@@ -35,7 +35,7 @@ form8ion plugin for node.js project deployed with Docker
 ### Installation
 
 ```sh
-$ npm install @form8ion/docker-nodejs
+$ npm install @form8ion/docker-nodejs --save-prod
 ```
 
 ### Example
