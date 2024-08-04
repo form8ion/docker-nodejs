@@ -15,6 +15,8 @@ form8ion plugin for node.js project deployed with Docker
 * [Usage](#usage)
   * [Installation](#installation)
   * [Example](#example)
+    * [Import](#import)
+    * [Execute](#execute)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
@@ -47,7 +49,10 @@ import {scaffold} from '@form8ion/docker-nodejs';
 
 ```javascript
 (async () => {
-  await scaffold({projectRoot: process.cwd()});
+  await scaffold({
+    projectRoot: process.cwd(),
+    buildDirectory: 'path/to/application/entry/point'
+  });
 })();
 ```
 

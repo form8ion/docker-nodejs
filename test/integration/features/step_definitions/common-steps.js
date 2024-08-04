@@ -13,6 +13,8 @@ Before(async function () {
   // eslint-disable-next-line import/no-extraneous-dependencies,import/no-unresolved
   ({scaffold} = await import('@form8ion/docker-nodejs'));
 
+  this.projectRoot = process.cwd();
+
   stubbedFs({
     node_modules: stubbedNodeModules
   });
@@ -23,5 +25,8 @@ After(function () {
 });
 
 When('the project is scaffolded', async function () {
-  await scaffold({projectRoot: process.cwd()});
+  await scaffold({
+    projectRoot: this.projectRoot,
+    buildDirectory: 'foo'
+  });
 });
