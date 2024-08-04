@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: docker-nodejs
+  description: form8ion plugin for node.js project deployed with Docker
+  private: false
+  homepage: https://npm.im/@form8ion/docker-nodejs
