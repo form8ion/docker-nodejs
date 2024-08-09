@@ -6,6 +6,8 @@ FROM node:\${NODE_VERSION}-alpine
 
 USER node
 
+COPY ${buildDirectory}/index.js
+
 CMD ["node", "${buildDirectory}/index.js"]
 `);
 }
