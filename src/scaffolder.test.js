@@ -17,6 +17,8 @@ describe('scaffolder', () => {
     expect(fs.writeFile).toHaveBeenCalledWith(`${projectRoot}/Dockerfile`, `ARG NODE_VERSION
 FROM node:\${NODE_VERSION}-alpine
 
+ENV NODE_ENV="production"
+
 USER node
 
 COPY ${buildDirectory}/index.js
